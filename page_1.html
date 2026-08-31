@@ -5,160 +5,250 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title></title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
 
+<body class="is-preload">
 
-
-
-
-
-				<!-- Header CHANGE 1 --> 
-					<header id="header">
-						<a href="index.html" class="logo"> Current Project</a>
-					</header>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
 
 
 
 
 
-
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">Main Page</a></li>
-							<li class="active"><a href="page_1.html">OCT Arm 3D</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/dnadeem100/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-							<li><a href="https://github.com/d-nadeem" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+		<!-- Header CHANGE 1 -->
+		<header id="header">
+			<a href="index.html" class="logo"> Current Project</a>
+		</header>
 
 
 
 
 
 
-				<!-- Main -->
-					<div id="main">
 
-						<!-- Post -->
-						<section class="post">
-								<header class="major">
-									<h1>3D Octopus Arm End Effector<br />
-									</h1>
-								</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">Main Page</a></li>
+				<li class="active"><a href="page_1.html">OCT Arm 3D</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/dnadeem100/" target="_blank"
+						class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+				<li><a href="https://github.com/d-nadeem" target="_blank" class="icon brands alt fa-github"><span
+							class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
+
+
+
+
+
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<h1>3D Octopus Arm End Effector<br />
+					</h1>
+				</header>
+
+				<!-- Image -->
+
+
+				<span class="image fit"><img src="images/pg_1/pg1_thumb.PNG" alt="" /></span>
+
+				<h2>Problem Statement</h2>
+				<p>The 2D Octopus Arm project revealed a key limitation: The design could not easily integrade 3 DOF.
+					The 2D arm was limited to 1 DOF, bend on a plane. 
+					When the end effector is parallel to the ground, the design also required gravity to create an inward spiral to avoid self-collision.
+					
+					 Expanding to 3 DOF would
+					enable a larger range of mobility, which is particularly valuable for pick-and-place
+					tasks.
+
+					Prior research by Wang et al. (2024) attempted to address this limitation through a
+					logarithmic spiral-based soft robot design, but it encountered similar constraints in
+					its design. This gap highlights the need for a design approach
+					that can reliably deliver 3 DOF while remaining practical to fabricate and control.
+
+					<hr>
+
+
+
+				<h3>Project Scope</h3>
+
+				<body>
+
+					<div class="grid-container">
+
+						<div class="bullet-item">• Provide 3 degrees of freedom</div>
+						<div class="bullet-item">• Used repetitive components to enable mass production and reduce costs
+						</div>
+						<div class="bullet-item">• Bill of materials capped at $100</div>
+
+						<div class="bullet-item">• Explored pulley mechanisms for cost reduction, compactness, and
+							design simplicity</div>
+						<div class="bullet-item">• Explore controller UI</div>
+
+						<div class="bullet-item">• Reduced item rejection rate due to defects</div>
+						<div class="bullet-item">• End effector length: 800mm</div>
+
+						<div class="bullet-item">• Switched material from TPU to PLA for added compressive strength
+						</div>
+						<div class="bullet-item">• Maximum assembly weight: 1.5kg</div>
+
 						
-								<!-- Image -->
-									
-							
-									<span class="image fit"><img src="images/pg_1/pg1_thumb.PNG" alt="" /></span>
+						<div class="bullet-item">• Maximum rope tension: 18kg (X, Y, and Z axes)</div>
+					</div>
 
-									<h2>Problem Statement</h2>
-									<p> Traditional robotic manipulators are highly effective in structured environments, 
-										but their rigid architectures can limit adaptability, increase mechanical complexity,
-										 and raise manufacturing costs when handling delicate or irregular objects. 
-										 Soft robotic solutions address some of these challenges, yet many designs remain difficult
-										  to manufacture, assemble, and scale due to high component counts and specialized materials.
+				</body>
+				<hr>
 
 
-								
-									<hr>
-									<h2>Contribution</h2>
-										<div class="box alt">
-										<div class="row gtr-50 gtr-uniform">
-											<div class="col-4"><span class="image fit"><img src="images/pg_1/1_pg1.PNG" width="300" height="300"alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pg_1/2_pg1.jpg" width="300" height="300"alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pg_1/3_pg1.jpg"width="300" height="300" alt="" /></span></div>
-											<!-- Break -->
-											<div class="col-4"><span class="image fit"><img src="images/pg_1/4_pg1.PNG" width="300" height="300" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pg_1/5_pg1.png" width="300" height="300" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pg_1/6_pg1.jpg" width="300" height="300" alt="" /></span></div>
-										
-										</div>
-										
-									</div>
-
-									<div class="section-block">
-										<h3>What?</h3>
-										<p>
-											Project is based on the research paper “https://www.cell.com/device/pdfExtended/S2666-9986(24)00603-3.”
- 											
-											 A major part of the project involved transitioning from a TPU-based design to a predominantly PLA-based system to improve print reliability,
-											  structural consistency, and ease of assembly. Throughout development, I used CAD modeling, iterative prototyping, to reduce the number of components needed for assembly.
-										</p>
-									</div>
-
-									<hr>
-																		<div class="section-block">
-										<h3>How?</h3>
-										<p>
-											I redesigned and optimized an octopus-inspired robotic arm by first analyzing the original mechanism to identify areas where component count, 
-											assembly complexity, and manufacturability could be improved. Using CAD software, I simplified the mechanical architecture and redesigned 
-											several structural components to create a more compact and practical system for 3D printing and assembly.
-										</p>
-									</div>
-
-
-								<!-- Box -->
-									
-							</section>
+				<h3>Process</h3>
+				<div class="box alt">
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="images/pg_1/1_pg1.PNG" width="300"
+									height="300" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/pg_1/2_pg1.png" width="300"
+									height="300" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/pg_1/3_pg1.jpg" width="300"
+									height="300" alt="" /></span></div>
+						<!-- Break -->
+						<div class="col-4"><span class="image fit"><img src="images/pg_1/4_pg1.PNG" width="300"
+									height="300" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/pg_1/5_pg1.png" width="300"
+									height="300" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/pg_1/6_pg1.jpg" width="300"
+									height="300" alt="" /></span></div>
 
 					</div>
 
-			<!-- Footer -->
-				
-			<footer id="footer">
+				</div>
+
+				<div class="section-block">
+					<h3>Process Description</h3>
+					<p>
+						Project is based on the research paper
+						“https://www.cell.com/device/pdfExtended/S2666-9986(24)00603-3.”
+
+						A major part of the project involved transitioning from a TPU-based design to a predominantly
+						PLA-based system to improve print reliability,
+						structural consistency, and ease of assembly. Throughout development, I used CAD modeling,
+						iterative prototyping, to reduce the number of components needed for assembly.
 						
-					
-				<section class="alt">
-					<h3>Address</h3>
-					<p><a href="https://www.google.com/maps/place/Oshawa,+ON/@43.9482713,-79.0184346,11z/data=!3m1!4b1!
-						4m5!3m4!1s0x89d51d21ccd37533:0xdd8ceff2f844fcbf!8m2!3d43.8970929!4d-78.8657912">Oshawa, Ontario</a></p>
 					</p>
-				</section>
-				
-				<section>
-					<h3>Email</h3>
-					<p><a href="mailto:dnadeem100@outlook.com">dnadeem100@outlook.com</a></p>
-				</section>
-				<section>
-					<h3>Links</h3>
-					<ul class="icons alt">
-						<li><a href="https://www.linkedin.com/in/dnadeem100/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-						<li><a href="https://github.com/d-nadeem" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
-				</section>
+				</div>
+
+				<hr>
+
+
+
+				<h3>Troubleshooting </h3>
+
+				<div class="grid-container">
+					<div class="bullet-item">• Design required too much support material</div>
+					<div class="bullet-item">• Design was too complex to 3D print</div>
+
+					<div class="bullet-item">• Exceeded the weight limit, per calculations</div>
+
+					<div class="bullet-item">• Excessive friction between joints</div>
+					<div class="bullet-item">• Redundant components in the design</div>
+
+					<div class="bullet-item">• Threads locked between links during operation</div>
+					<div class="bullet-item">• Threads could not withstand tension forces</div>
+
+					<div class="bullet-item">• Grasp path had a wide curvature, preventing it from grasping intended
+						items</div>
+					<div class="bullet-item">• Required extensive clamping hardware</div>
+				</div>
+
+				<hr>
+
+
+
+				<div class="section-block">
+					<h3>Result</h3>
+					<p>
+						I redesigned and optimized an octopus-inspired robotic arm by first analyzing the original
+						mechanism to identify areas where component count,
+						assembly complexity, and manufacturability could be improved. Using CAD software, I simplified
+						the mechanical architecture and redesigned
+						several structural components to create a more compact and practical system for 3D printing and
+						assembly.
+					</p>
+					<div class="col-4"><span class="image fit"><img src="images/pg_1/result.jpg" width="300"
+									height="700" alt="" /></span></div>
+				</div>
+
+
+				<!-- Box -->
+
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+
+		<footer id="footer">
+
+
+			<section class="alt">
+				<h3>Address</h3>
+				<p><a href="https://www.google.com/maps/place/Pickering,+ON/@43.9482713,-79.0184346,11z/data=!3m1!4b1!
+						4m5!3m4!1s0x89d51d21ccd37533:0xdd8ceff2f844fcbf!8m2!3d43.8970929!4d-78.8657912">Pickering, Ontario</a></p>
+				</p>
+			</section>
+
+			<section>
+				<h3>Email</h3>
+				<p><a href="mailto:dnadeem100@outlook.com">dnadeem100@outlook.com</a></p>
+			</section>
+			<section>
+				<h3>Links</h3>
+				<ul class="icons alt">
+					<li><a href="https://www.linkedin.com/in/dnadeem100/" target="_blank"
+							class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+					<li><a href="https://github.com/d-nadeem" target="_blank" class="icon brands alt fa-github"><span
+								class="label">GitHub</span></a></li>
+				</ul>
+			</section>
 			</section>
 		</footer>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
 
-			</div>
+	</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
+
 </html>
