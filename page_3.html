@@ -5,142 +5,302 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Page 3</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+
+<head>
+	<title>Page 3</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
 
 	<style>
-	.container{padding: 30px;}
+		.container {
+			padding: 30px;
+		}
 	</style>
 
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Real-Time Embedded Systems Project</a>
-					</header>
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">Real-Time Embedded Systems Project</a>
+		</header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">My Portfolio</a></li>
-							<li class="active"><a href="page_3.html">3RRS Ball Balancing Robot</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/dnadeem100/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-							<li><a href="https://github.com/d-nadeem" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">My Portfolio</a></li>
+				<li class="active"><a href="page_3.html">3RRS Ball Balancing Robot</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/dnadeem100/" target="_blank"
+						class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+				<li><a href="https://github.com/d-nadeem" target="_blank" class="icon brands alt fa-github"><span
+							class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
 
-				<!-- Main -->
-					<div id="main">
+		<!-- Main -->
+		<div id="main">
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<h1>3RRS Ball Balancing Robot<br />
-									</h1>
-								</header>
-								<!-- Image -->
-									
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<h1>3RRS Ball Balancing Robot<br />
+					</h1>
+				</header>
+				<!-- Image -->
 
-									<span class="image fit"><img src="images/pg_3/3_pg3.gif" alt="" /></span>
 
-									<h2>Problem Statement</h2>
-									<p> 
-										Optimized the control software of a 3RRR ball balancing robot to run efficiently on lower-performance
-										microcontrollers, reducing system cost while maintaining real-time stabilization performance.
-									   Improve design from this project 'https://www.aaedmusa.com/projects/ball-balancer'.
-									
-										
-										<hr>
-									<h2>Contribution</h2>
-										<div class="box alt">
-										<div class="row gtr-50 gtr-uniform">
-											<div class="col-4"><span class="image fit"><img src="images/pg_3/1_pg3.gif" alt="" width="300" height="300"/></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pg_3/2_pg3.jpg" alt="" width="300" height="300"/></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pg_3/3_pg3.gif" alt="" width="300" height="300"/></span></div>
-										
-										
-										</div>
-										
-									</div>
+				<span class="image fit"><img src="images/pg_3/3_pg3.gif" alt="" /></span>
 
-									<div class="section-block">
-										<h3>What?</h3>
-										<p>
-											Optimized the program to reduce computational load, 
-											enabling the system to operate on an Arduino Mega (16 MHz) 
-											instead of a Teensy (600 MHz).
-										</p>
-									</div>
+				<h2>Problem Statement</h2>
+				<p>
 
-									<hr>
-																		<div class="section-block">
-										<h3>How?</h3>
-										<p>
-											Used direct port manipulation for the Arduino Mega to improve data acquisition speed, 
-											and applied signal filtering to eliminate false readings.
-										</p>
-									</div>
+					Balancing dynamic systems in motion is a challenge in
+					robotics and embedded systems. This requires precise motion
+					control and a fast reaction to the position of the ball. This
+					project builds on open source material.The reference project used a microcontroller called the
+					Teensy 4.1 which
+					operates at a frequency of 600 MHz. The microcontroller in their project is
+					too fast for the task and spends most of its clock cycle on idle.
 
-									
 
-								
-												
+					It also provides an opportunity to apply and demonstrate course material from
+					the Intro to Real-Time Embedded System course.
 
-							</section>
+
+					<hr>
+
+
+				<div class="section-block">
+					<h3>Project Scope</h3>
+					<p>
+						Optimized the program to reduce computational load,
+						so the prototype can operate on a slower microcontroller, the Arduino Mega (16 MHz)
+						instead of a Teensy (600 MHz).
+						Optimized the control software of a 3RRR ball balancing robot to operate on an Arduino Mega
+						(16MHz)
+						instead of a Teensy (600 MHz).
+						Improve design from this project 'https://www.aaedmusa.com/projects/ball-balancer'.
+					</p>
+				</div>
+
+				<hr>
+
+
+
+
+				<div class="section-block">
+					<h3>Open Source Resources</h3>
+					<p>
+						Many people in the community had their approach to this problem this list is to give credit to
+						the people who we've used resources from.
+						aaed muda: 'https://www.aaedmusa.com/projects/ball-balancer'.
+
+
+					</p>
+				</div>
+
+				<hr>
+
+
+
+				<div class="section-block">
+					<h2>Technical Background</h2>
+					<p>
+					<h4 style="text-align: center;">Free Body Diagram of gravity's effect on the steel bearing ball</h4>
+
+
+					The manipulator will change the orientation of the platform
+					on which the steel ball is placed. The system utilizes the
+					sinusoidal component of the force of gravity acting on the
+					ball. It is how the manipulator applies a force to change the position of the
+					ball.
+					</p>
+
+					<div class="col-4"><span class="image fit"><img src="images/pg_3/fbd.jpg" width="300" height="700"
+								alt="" /></span>
+					</div>
+
+
+
+
+
+					<p>
+					<h3>Data Filtering: Moving Mediam</h3>
+
+					A Moving Median is used to remove false readings from the resistive touch screen .
+
+					<h4 style="text-align: center;">Definition</h4>
+					A Moving Median is a data smoothing technique used to remove "noise" (random fluctuations) or
+					extreme outliers
+					from a sequence of data points
+					</p>
+
+					<div class="col-4"><span class="image fit"><img src="images/pg_3/median.png" width="300"
+								height="700" alt="" /></span>
+					</div>
+
+
+
+					<p>
+					<h3>Direct Port Manipulation</h3>
+
+					The method we used to send readings to the microcontroller faster.
+
+					<h4 style="text-align: center;">Definition</h4>
+					Direct port manipulation is the method of controlling a microcontroller's input/output pins
+					by interacting directly with its hardware registers instead of using slow software functions like
+					digitalWrite().
+					</p>
+
+					<div class="col-4"><span class="image fit"><img src="images/pg_3/dpm.jpg" width="300" height="700"
+								alt="" /></span>
+					</div>
+
+
+
+
+				</div>
+
+				<hr>
+
+
+				<h2>Process</h2>
+				<div class="box alt">
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="images/pg_3/1_pg3.gif" alt="" width="300"
+									height="300" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/pg_3/2_pg3.jpg" alt="" width="300"
+									height="300" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/pg_3/3_pg3.gif" alt="" width="300"
+									height="300" /></span></div>
+
 
 					</div>
 
-			<!-- Footer -->
-				
-			<footer id="footer">
-						
-					
-				<section class="alt">
-					<h3>Address</h3>
-					<p><a href="https://www.google.com/maps/place/Pickering,+ON/@43.9482713,-79.0184346,11z/data=!3m1!4b1!
-						4m5!3m4!1s0x89d51d21ccd37533:0xdd8ceff2f844fcbf!8m2!3d43.8970929!4d-78.8657912">Pickering, Ontario</a></p>
+				</div>
+
+				<div class="section-block">
+					<h3>Process Description</h3>
+					<p>
+						Map the Cartesian plane of the resistive touchscreen.
+						Collect a data set. Investigate the causes of false readings.
+						Test data input filters to omit false readings.
+						Implement direct port manipulation in the open-source code for the Arduino Mega microcontroller.
+						Test the manipulator's reaction speed, comparing data input through direct port manipulation and
+						digital read,
+						to explore whether the change is necessary.
 					</p>
-				</section>
-				
-				<section>
-					<h3>Email</h3>
-					<p><a href="mailto:dnadeem100@outlook.com">dnadeem100@outlook.com</a></p>
-				</section>
-				<section>
-					<h3>Links</h3>
-					<ul class="icons alt">
-						<li><a href="https://www.linkedin.com/in/dnadeem100/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-						<li><a href="https://github.com/d-nadeem" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
-				</section>
+				</div>
+
+				<hr>
+
+
+				<div class="section-block">
+					<h3>Troubleshooting</h3>
+					<div class="grid-container">
+						<div class="bullet-item">• Touchscreen sends a false center reading
+						</div>
+						<div class="bullet-item">• Manipulator out of sync with ball trajectory</div>
+
+						<div class="bullet-item">• Manipulator overshoots and launches the ball off the platform </div>
+						<div class="bullet-item">• Data input filter fails to omit multiple false readings</div>
+
+						<div class="bullet-item">• The manipulator does not react to the ball in motion</div>
+						<div class="bullet-item">• Resistive touchscreen fails to detect the ball</div>
+
+
+					</div>
+				</div>
+
+				<hr>
+
+
+				<div class="section-block">
+					<h3>Result</h3>
+					<p>
+						Used direct port manipulation for the Arduino Mega to improve data acquisition speed,
+						and applied signal filtering to eliminate false readings.
+					</p>
+
+					<img src="images/pg_3/3_pg3.gif" alt="Description" width="500">
+
+					<img src="images/pg_3/grade.png" alt="Description" width=auto>
+				</div>
+
+				<hr>
+
+
+
+				<div class="section-block">
+					<h3 style="text-align: center;">Project Documentation</h3>
+					<embed src="images/pg_3/Ball_Balancing_using_a_3RRS_Parallel_Manipulator.pdf" type="application/pdf"
+						width="100%" height="900px">
+				</div>
+
+
+
+			</section>
+		</div>
+
+
+
+
+		<!-- Footer -->
+
+		<footer id="footer">
+
+
+			<section class="alt">
+				<h3>Address</h3>
+				<p><a href="https://www.google.com/maps/place/Pickering,+ON/@43.9482713,-79.0184346,11z/data=!3m1!4b1!
+						4m5!3m4!1s0x89d51d21ccd37533:0xdd8ceff2f844fcbf!8m2!3d43.8970929!4d-78.8657912">Pickering, Ontario</a></p>
+				</p>
+			</section>
+
+			<section>
+				<h3>Email</h3>
+				<p><a href="mailto:dnadeem100@outlook.com">dnadeem100@outlook.com</a></p>
+			</section>
+			<section>
+				<h3>Links</h3>
+				<ul class="icons alt">
+					<li><a href="https://www.linkedin.com/in/dnadeem100/" target="_blank"
+							class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+					<li><a href="https://github.com/d-nadeem" target="_blank" class="icon brands alt fa-github"><span
+								class="label">GitHub</span></a></li>
+				</ul>
+			</section>
 			</section>
 		</footer>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
 
-			</div>
+	</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
+
 </html>
