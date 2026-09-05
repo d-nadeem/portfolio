@@ -4704,3 +4704,66 @@ body.is-preload #wrapper,
 body.fade-in #wrapper {
     background-color: #ffffff !important;
 }
+
+
+
+/* ============================================
+   MOBILE FIX — paste this at the very end of
+   assets/css/main.css (after everything else)
+   ============================================
+   Why: page_1.html uses three custom classes —
+   .grid-container, .bullet-item, .section-block —
+   that were never defined anywhere in main.css.
+   Undefined classes on a phone-width screen can
+   let content run wider than the viewport, which
+   is what makes the whole page look "zoomed in."
+   This block styles those classes responsively
+   and adds a couple of safety nets so nothing on
+   the page can ever overflow a phone screen.
+*/
+
+/* Never let an image be wider than its container */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Safety net: stop any stray wide element from
+   forcing the whole page to scale/zoom */
+body {
+	overflow-x: hidden;
+}
+
+/* Style for the bullet grid used in Project Scope
+   and Troubleshooting sections */
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem 2rem;
+	margin: 0 0 2rem 0;
+}
+
+.bullet-item {
+	line-height: 1.6;
+}
+
+/* Style for the Process Description / Result blocks */
+.section-block {
+	margin: 0 0 2rem 0;
+}
+
+	.section-block img {
+		max-width: 100%;
+		height: auto;
+	}
+
+/* On phones, drop the bullet grid to a single column
+   so nothing gets squeezed or overflows */
+@media screen and (max-width: 736px) {
+
+	.grid-container {
+		grid-template-columns: 1fr;
+		gap: 0.5rem;
+	}
+
+}
