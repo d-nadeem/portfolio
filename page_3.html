@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>Page 3</title>
+	<title></title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -18,26 +18,31 @@
 
 <body class="is-preload">
 
-	<style>
-		.container {
-			padding: 30px;
-		}
-	</style>
-
-
 	<!-- Wrapper -->
 	<div id="wrapper">
 
-		<!-- Header -->
+
+
+
+
+
+		<!-- Header CHANGE 1 -->
 		<header id="header">
-			<a href="index.html" class="logo">Real-Time Embedded Systems Project</a>
+			<a href="index.html" class="logo"> Archived Project</a>
 		</header>
+
+
+
+
+
+
+
 
 		<!-- Nav -->
 		<nav id="nav">
 			<ul class="links">
-				<li><a href="index.html">My Portfolio</a></li>
-				<li class="active"><a href="page_3.html">3RRS Ball Balancing Robot</a></li>
+				<li><a href="index.html">Main Page</a></li>
+				<li class="active"><a href="page_1.html">OCT Arm 3D</a></li>
 			</ul>
 			<ul class="icons">
 				<li><a href="https://www.linkedin.com/in/dnadeem100/" target="_blank"
@@ -47,146 +52,88 @@
 			</ul>
 		</nav>
 
+
+
+
+
+
 		<!-- Main -->
 		<div id="main">
 
 			<!-- Post -->
 			<section class="post">
 				<header class="major">
-					<h1>3RRS Ball Balancing Robot<br />
+					<h1>3D Octopus Arm End Effector<br />
 					</h1>
 				</header>
+
 				<!-- Image -->
 
 
-				<span class="image fit"><img src="images/pg_3/3_pg3.gif" alt="" /></span>
+				<span class="image fit"><img src="images/pg_1/pg1_thumb.PNG" alt="" /></span>
 
 				<h2>Problem Statement</h2>
-				<p>
-
-					Balancing dynamic systems in motion is a challenge in
-					robotics and embedded systems. This requires precise motion
-					control and a fast reaction to the position of the ball. This
-					project builds on open source material.The reference project used a microcontroller called the
-					Teensy 4.1 which
-					operates at a frequency of 600 MHz. The microcontroller in their project is
-					too fast for the task and spends most of its clock cycle on idle.
-
-
-					It also provides an opportunity to apply and demonstrate course material from
-					the Intro to Real-Time Embedded System course.
-
-
-					<hr>
-
-
 				<div class="section-block">
-					<h3>Project Scope</h3>
-					<p>
-						Optimized the program to reduce computational load,
-						so the prototype can operate on a slower microcontroller, the Arduino Mega (16 MHz)
-						instead of a Teensy (600 MHz).
-						Optimized the control software of a 3RRR ball balancing robot to operate on an Arduino Mega
-						(16MHz)
-						instead of a Teensy (600 MHz).
-						Improve design from this project 'https://www.aaedmusa.com/projects/ball-balancer'.
-					</p>
-				</div>
 
-				<hr>
-
-
-
-
-				<div class="section-block">
-					<h3>Open Source Resources</h3>
-					<p>Many people in the community have tackled this problem in their own way. 
-						This list is our way of giving credit to those whose resources we relied on,
-						 ordered from most to least relied upon.
-					
-						<div class="bullet-item">• Aaed Musa:             https://www.aaedmusa.com/projects/ball-balancer</div>
-						<div class="bullet-item">• Koshiro Robot Creator: https://www.youtube.com/watch?v=KnYSuQEBGHc</div>
-						<div class="bullet-item">• Robot Shop:            https://ca.robotshop.com/products/acrome-ball-balancing-table-experiment-system-robotics</div>
-
-
-					</p>
-				</div>
-
-				<hr>
-
-
-
-				<div class="section-block">
-					<h2>Technical Background</h2>
-					<p>
-					<h4 style="text-align: center;">Free Body Diagram of gravity's effect on the steel bearing ball</h4>
-
-
-					The manipulator will change the orientation of the platform
-					on which the steel ball is placed. The system utilizes the
-					sinusoidal component of the force of gravity acting on the
-					ball. It is how the manipulator applies a force to change the position of the
-					ball.
-					</p>
-
-					<div class="col-4"><span class="image fit"><img src="images/pg_3/fbd.jpg" width="300" height="700"
-								alt="" /></span>
+					<ol>
+  <li>The 2D Octopus Arm project revealed a key limitation: the design could not easily integrate 3 DOF.</li>
+  <li>The 2D arm was limited to 1 DOF, bending on a single plane.</li>
+  <li>When the end effector is parallel to the ground, the design also required gravity to create an inward spiral to avoid self-collision.</li>
+  <li>Expanding to 3 DOF would enable a larger range of mobility, which is particularly valuable for pick-and-place tasks.</li>
+  <li>Prior research by Wang et al. (2024) attempted to address this limitation through a logarithmic spiral-based soft robot design, but it encountered similar constraints.</li>
+  <li>This gap highlights the need for a design approach that can reliably deliver 3 DOF while remaining practical to fabricate and control.</li>
+</ol>
+						
 					</div>
 
 
 
+				<h3>Project Scope</h3>
 
+				<body>
 
-					<p>
-					<h3>Data Filtering: Moving Mediam</h3>
+					<div class="grid-container">
 
-					A Moving Median is used to remove false readings from the resistive touch screen .
+						<div class="bullet-item">• Provide 3 degrees of freedom</div>
+						<div class="bullet-item">• Used repetitive components to enable mass production and reduce costs
+						</div>
+						<div class="bullet-item">• Bill of materials capped at $100</div>
 
-					<h4 style="text-align: center;">Definition</h4>
-					A Moving Median is a data smoothing technique used to remove "noise" (random fluctuations) or
-					extreme outliers
-					from a sequence of data points
-					</p>
+						<div class="bullet-item">• Explored pulley mechanisms for cost reduction, compactness, and
+							design simplicity</div>
+						<div class="bullet-item">• Explore controller UI</div>
 
-					<div class="col-4"><span class="image fit"><img src="images/pg_3/median.png" width="300"
-								height="700" alt="" /></span>
+						<div class="bullet-item">• Reduced item rejection rate due to defects</div>
+						<div class="bullet-item">• End effector length: 800mm</div>
+
+						<div class="bullet-item">• Switched material from TPU to PLA for added compressive strength
+						</div>
+						<div class="bullet-item">• Maximum assembly weight: 1.5kg</div>
+
+						
+						<div class="bullet-item">• Maximum rope tension: 18kg (X, Y, and Z axes)</div>
 					</div>
 
-
-
-					<p>
-					<h3>Direct Port Manipulation</h3>
-
-					The method we used to send readings to the microcontroller faster.
-
-					<h4 style="text-align: center;">Definition</h4>
-					Direct port manipulation is the method of controlling a microcontroller's input/output pins
-					by interacting directly with its hardware registers instead of using slow software functions like
-					digitalWrite().
-					</p>
-
-					<div class="col-4"><span class="image fit"><img src="images/pg_3/dpm.jpg" width="300" height="700"
-								alt="" /></span>
-					</div>
-
-
-
-
-				</div>
-
+				</body>
 				<hr>
 
 
-				<h2>Process</h2>
+				<h3>Process</h3>
 				<div class="box alt">
 					<div class="row gtr-50 gtr-uniform">
-						<div class="col-4"><span class="image fit"><img src="images/pg_3/1_pg3.gif" alt="" width="300"
-									height="300" /></span></div>
-						<div class="col-4"><span class="image fit"><img src="images/pg_3/2_pg3.jpg" alt="" width="300"
-									height="300" /></span></div>
-						<div class="col-4"><span class="image fit"><img src="images/pg_3/3_pg3.gif" alt="" width="300"
-									height="300" /></span></div>
-
+						<div class="col-4"><span class="image fit"><img src="images/pg_1/1_pg1.PNG" width="300"
+									height="300" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/pg_1/2_pg1.png" width="300"
+									height="300" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/pg_1/3_pg1.jpg" width="300"
+									height="300" alt="" /></span></div>
+						<!-- Break -->
+						<div class="col-4"><span class="image fit"><img src="images/pg_1/4_pg1.PNG" width="300"
+									height="300" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/pg_1/5_pg1.png" width="300"
+									height="300" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/pg_1/6_pg1.jpg" width="300"
+									height="300" alt="" /></span></div>
 
 					</div>
 
@@ -194,69 +141,56 @@
 
 				<div class="section-block">
 					<h3>Process Description</h3>
-					<p>
-						Map the Cartesian plane of the resistive touchscreen.
-						Collect a data set. Investigate the causes of false readings.
-						Test data input filters to omit false readings.
-						Implement direct port manipulation in the open-source code for the Arduino Mega microcontroller.
-						Test the manipulator's reaction speed, comparing data input through direct port manipulation and
-						digital read,
-						to explore whether the change is necessary.
-					</p>
+					<ol>
+  <li>The project is based on the research paper "https://www.cell.com/device/pdfExtended/S2666-9986(24)00603-3".</li>
+  <li>A major part of the project involved transitioning from a TPU-based design to a predominantly PLA-based system to improve print reliability, structural consistency, and ease of assembly.</li>
+  <li>Throughout development, I used CAD modeling and iterative prototyping to reduce the number of components needed for assembly.</li>
+</ol>
 				</div>
 
 				<hr>
 
 
-				<div class="section-block">
-					<h3>Troubleshooting</h3>
-					<div class="grid-container">
-						<div class="bullet-item">• Touchscreen sends a false center reading
-						</div>
-						<div class="bullet-item">• Manipulator out of sync with ball trajectory</div>
 
-						<div class="bullet-item">• Manipulator overshoots and launches the ball off the platform </div>
-						<div class="bullet-item">• Data input filter fails to omit multiple false readings</div>
+				<h3>Troubleshooting </h3>
 
-						<div class="bullet-item">• The manipulator does not react to the ball in motion</div>
-						<div class="bullet-item">• Resistive touchscreen fails to detect the ball</div>
+				<div class="grid-container">
+					<div class="bullet-item">• Design required too much support material</div>
+					<div class="bullet-item">• Design was too complex to 3D print</div>
 
+					<div class="bullet-item">• Exceeded the weight limit, per calculations</div>
 
-					</div>
+					<div class="bullet-item">• Excessive friction between joints</div>
+					<div class="bullet-item">• Redundant components in the design</div>
+
+					<div class="bullet-item">• Threads locked between links during operation</div>
+					<div class="bullet-item">• Threads could not withstand tension forces</div>
+
+					<div class="bullet-item">• Grasp path had a wide curvature, preventing it from grasping intended
+						items</div>
+					<div class="bullet-item">• Required extensive clamping hardware</div>
 				</div>
 
 				<hr>
+
 
 
 				<div class="section-block">
 					<h3>Result</h3>
-					<p>
-						Used direct port manipulation for the Arduino Mega to improve data acquisition speed,
-						and applied signal filtering to eliminate false readings.
-					</p>
-
-					<img src="images/pg_3/3_pg3.gif" alt="Description" width="500">
-
-					<img src="images/pg_3/grade.png" alt="Description" width=auto>
-				</div>
-
-				<hr>
-
-
-
-				<div class="section-block">
-					<h3 style="text-align: center;">Project Documentation</h3>
-					<embed src="images/pg_3/Ball_Balancing_using_a_3RRS_Parallel_Manipulator.pdf" type="application/pdf"
-						width="100%" height="900px">
+					<ol>
+  <li>I redesigned and optimized an octopus-inspired robotic arm by first analyzing the original mechanism to identify areas where component count, assembly complexity, and manufacturability could be improved.</li>
+  <li>Using CAD software, I simplified the mechanical architecture and redesigned several structural components to create a more compact and practical system for 3D printing and assembly.</li>
+</ol>
+					<div class="col-4"><span class="image fit"><img src="images/pg_1/result.jpg" width="300"
+									height="700" alt="" /></span></div>
 				</div>
 
 
+				<!-- Box -->
 
 			</section>
+
 		</div>
-
-
-
 
 		<!-- Footer -->
 

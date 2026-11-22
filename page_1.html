@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+		Massively by HTML5 UP
+		html5up.net | @ajlkn
+		Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	-->
 <html>
 
 <head>
@@ -21,28 +21,16 @@
 	<!-- Wrapper -->
 	<div id="wrapper">
 
-
-
-
-
-
-		<!-- Header CHANGE 1 -->
+		<!-- Header -->
 		<header id="header">
-			<a href="index.html" class="logo"> Archived Project</a>
+			<a href="index.html" class="logo">Capstone Project</a>
 		</header>
-
-
-
-
-
-
-
 
 		<!-- Nav -->
 		<nav id="nav">
 			<ul class="links">
-				<li><a href="index.html">Main Page</a></li>
-				<li class="active"><a href="page_1.html">OCT Arm 3D</a></li>
+				<li><a href="index.html">My Portfolio</a></li>
+				<li class="active"><a href="page_2.html">Airport Smart Cart</a></li>
 			</ul>
 			<ul class="icons">
 				<li><a href="https://www.linkedin.com/in/dnadeem100/" target="_blank"
@@ -52,109 +40,150 @@
 			</ul>
 		</nav>
 
-
-
-
-
-
 		<!-- Main -->
 		<div id="main">
 
 			<!-- Post -->
 			<section class="post">
 				<header class="major">
-					<h1>3D Octopus Arm End Effector<br />
+					<h1>Capstone Project: Airport Smart Cart<br />
 					</h1>
 				</header>
 
 				<!-- Image -->
 
 
-				<span class="image fit"><img src="images/pg_1/pg1_thumb.PNG" alt="" /></span>
+				<span class="image fit"><img src="images/pg_2/pg2_thumb.jpg" alt="" /></span>
 
 				<h2>Problem Statement</h2>
-				<p>The 2D Octopus Arm project revealed a key limitation: The design could not easily integrade 3 DOF.
-					The 2D arm was limited to 1 DOF, bend on a plane. 
-					When the end effector is parallel to the ground, the design also required gravity to create an inward spiral to avoid self-collision.
-					
-					 Expanding to 3 DOF would
-					enable a larger range of mobility, which is particularly valuable for pick-and-place
-					tasks.
-
-					Prior research by Wang et al. (2024) attempted to address this limitation through a
-					logarithmic spiral-based soft robot design, but it encountered similar constraints in
-					its design. This gap highlights the need for a design approach
-					that can reliably deliver 3 DOF while remaining practical to fabricate and control.
-
-					<hr>
+				<ol>
+  <li>Airports can be overwhelming for elderly passengers, especially when navigating long distances, crowded terminals, and complex signage.</li>
+  <li>Many seniors struggle to locate their gates independently, which can lead to missed flights, stress, and greater reliance on airport staff.</li>
+  <li>Providing personalized, real-time guidance can significantly reduce these challenges and improve the travel experience for elderly users.</li>
+</ol>
 
 
 
-				<h3>Project Scope</h3>
 
-				<body>
 
-					<div class="grid-container">
-
-						<div class="bullet-item">• Provide 3 degrees of freedom</div>
-						<div class="bullet-item">• Used repetitive components to enable mass production and reduce costs
-						</div>
-						<div class="bullet-item">• Bill of materials capped at $100</div>
-
-						<div class="bullet-item">• Explored pulley mechanisms for cost reduction, compactness, and
-							design simplicity</div>
-						<div class="bullet-item">• Explore controller UI</div>
-
-						<div class="bullet-item">• Reduced item rejection rate due to defects</div>
-						<div class="bullet-item">• End effector length: 800mm</div>
-
-						<div class="bullet-item">• Switched material from TPU to PLA for added compressive strength
-						</div>
-						<div class="bullet-item">• Maximum assembly weight: 1.5kg</div>
-
-						
-						<div class="bullet-item">• Maximum rope tension: 18kg (X, Y, and Z axes)</div>
+				<div class="box alt">
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="images/pg_2/cap_gif1.gif"
+									alt="Description" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/pg_2/cap_gif2.gif"
+									alt="Description" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/pg_2/cap_gif3.gif"
+									alt="Description" /></span></div>
 					</div>
+				</div>
 
-				</body>
+
+
+
+
 				<hr>
 
 
-				<h3>Process</h3>
-				<div class="box alt">
-					<div class="row gtr-50 gtr-uniform">
-						<div class="col-4"><span class="image fit"><img src="images/pg_1/1_pg1.PNG" width="300"
-									height="300" alt="" /></span></div>
-						<div class="col-4"><span class="image fit"><img src="images/pg_1/2_pg1.png" width="300"
-									height="300" alt="" /></span></div>
-						<div class="col-4"><span class="image fit"><img src="images/pg_1/3_pg1.jpg" width="300"
-									height="300" alt="" /></span></div>
-						<!-- Break -->
-						<div class="col-4"><span class="image fit"><img src="images/pg_1/4_pg1.PNG" width="300"
-									height="300" alt="" /></span></div>
-						<div class="col-4"><span class="image fit"><img src="images/pg_1/5_pg1.png" width="300"
-									height="300" alt="" /></span></div>
-						<div class="col-4"><span class="image fit"><img src="images/pg_1/6_pg1.jpg" width="300"
-									height="300" alt="" /></span></div>
 
-					</div>
-
-				</div>
 
 				<div class="section-block">
+
+
+
+
 					<h3>Process Description</h3>
 					<p>
-						Project is based on the research paper
-						“https://www.cell.com/device/pdfExtended/S2666-9986(24)00603-3.”
+<ul>
+  <li>A major focus of the project was keeping the system low-cost, lightweight, and easy to deploy.</li>
+  <li>We designed the workflow so non-technical users could set up routes and configure new environments in under 20 minutes without requiring specialized infrastructure.</li>
+  <li>Developed a Raspberry Pi-based smart navigation system for airport luggage carts using computer vision, AprilTag localization, and low-cost cameras to provide real-time visual guidance for elderly passengers.</li>
+  <li>Built a rapid-deployment workflow that enabled non-technical users to configure navigation routes and annotated environments in under 20 minutes.</li>
+  <li>Contributed to embedded systems integration, real-time image processing, testing, and system optimization within a multidisciplinary engineering capstone team.</li>
+</ul>
 
-						A major part of the project involved transitioning from a TPU-based design to a predominantly
-						PLA-based system to improve print reliability,
-						structural consistency, and ease of assembly. Throughout development, I used CAD modeling,
-						iterative prototyping, to reduce the number of components needed for assembly.
-						
 					</p>
 				</div>
 
+
+
+
+				<div class="box alt">
+					<div class="row gtr-50 gtr-uniform">
+
+						<!-- Cell 1 -->
+						<div class="col-6">
+							<span class="image fit"><img src="images/pg_2/1_pg2.jpg" alt="" /></span>
+							<p style="text-align: center;">Each side of the device has a camera that alternates in
+								capturing
+								an image within the frame, in order to capture an ArUco marker in the frame.</p>
+						</div>
+
+						<!-- Cell 2 -->
+						<div class="col-6">
+							<span class="image fit"><img src="images/pg_2/2_pg2.jpg" alt="" /></span>
+							<p style="text-align: center;">Both the left and right cameras capture images of the
+								environment. The ArUco markers are identified and stored for the navigation program.</p>
+						</div>
+
+						<!-- Cell 3 -->
+						<div class="col-6">
+							<span class="image fit"><img src="images/pg_2/3_pg2.jpg" alt="" /></span>
+							<p style="text-align: center;">Each marker ID is linked to an annotated image of the
+								corresponding environment and route.</p>
+						</div>
+
+						<!-- Cell 4 -->
+						<div class="col-6">
+							<span class="image fit"><img src="images/pg_2/4_pg2.jpg" alt="" /></span>
+							<p style="text-align: center;">ArUco markers are also used for the tickets; IDs 1–10 are
+								reserved to identify each ticket and its corresponding route.</p>
+						</div>
+
+						<!-- Cell 5 -->
+						<div class="col-6">
+							<span class="image fit"><img src="images/pg_2/5_pg2v2.jpg" alt="" /></span>
+							<p style="text-align: center;">Once the ticket is scanned, the user is presented with a map
+								displaying a pre-planned route to their destination, before navigation begins.</p>
+						</div>
+
+
+						<!-- Cell 6 -->
+						<div class="col-6">
+							<span class="image fit"><img src="images/pg_2/6_pg2.jpg" alt="" /></span>
+							<p style="text-align: center;">Once the ticket has been scanned, the UI presents the ticket
+								details, with emphasis on the scheduled departure time, the origin station, and the
+								final
+								destination.</p>
+						</div>
+
+					</div>
+				</div>
+
+
+				<hr>
+
+
+				<div class="section-block">
+					<h2>Hardware Used</h2>
+					<p>
+				<div style="text-align: center;">
+					<img src="images/pg_2/hardware.svg" alt="Description" width=auto>
+				</div>
+
+					</p>
+				</div>
+				<hr>
+
+
+					<div class="section-block">
+					<h2>Software Used</h2>
+					<p>
+				<div style="text-align: center;">
+					<img src="images/pg_2/software.svg" alt="Description" width=auto>
+				</div>
+
+					</p>
+				</div>
 				<hr>
 
 
@@ -162,39 +191,62 @@
 				<h3>Troubleshooting </h3>
 
 				<div class="grid-container">
-					<div class="bullet-item">• Design required too much support material</div>
-					<div class="bullet-item">• Design was too complex to 3D print</div>
+					<div class="bullet-item">• Program crashed frequently
+					</div>
+					<div class="bullet-item">• Program failed to identify ArUco markers</div>
 
-					<div class="bullet-item">• Exceeded the weight limit, per calculations</div>
+					<div class="bullet-item">• Software required excessive RAM usage</div>
+					<div class="bullet-item">• Camera failed to capture ArUco markers</div>
 
-					<div class="bullet-item">• Excessive friction between joints</div>
-					<div class="bullet-item">• Redundant components in the design</div>
+					<div class="bullet-item">• UI was not intuitive</div>
+					<div class="bullet-item">• Vibrations from the cart blurred the camera image</div>
 
-					<div class="bullet-item">• Threads locked between links during operation</div>
-					<div class="bullet-item">• Threads could not withstand tension forces</div>
-
-					<div class="bullet-item">• Grasp path had a wide curvature, preventing it from grasping intended
-						items</div>
-					<div class="bullet-item">• Required extensive clamping hardware</div>
+					<div class="bullet-item">• Preliminary designs were too complicated to execute</div>
+					<div class="bullet-item">• Hardware performance issues</div>
 				</div>
-
 				<hr>
-
 
 
 				<div class="section-block">
 					<h3>Result</h3>
-					<p>
-						I redesigned and optimized an octopus-inspired robotic arm by first analyzing the original
-						mechanism to identify areas where component count,
-						assembly complexity, and manufacturability could be improved. Using CAD software, I simplified
-						the mechanical architecture and redesigned
-						several structural components to create a more compact and practical system for 3D printing and
-						assembly.
-					</p>
-					<div class="col-4"><span class="image fit"><img src="images/pg_1/result.jpg" width="300"
-									height="700" alt="" /></span></div>
+					<ul>
+  <li>Developed a Raspberry Pi-based smart navigation system for airport luggage carts using computer vision, AprilTag localization, and low-cost cameras to provide real-time visual guidance for elderly passengers.</li>
+  <li>I developed the computer vision and navigation pipeline using OpenCV’s ArUco marker detection library using a Raspberry Pi and low-cost USB cameras.</li>
+  <li>The system continuously detected and identified markers placed throughout the environment and used that data to determine the cart’s location in real time.</li>
+  <li>I then integrated the localization data with the navigation logic to update the on-screen directional guidance, by displaying annotated images of the environment with navigation cues to guide users through the terminal.</li>
+</ul>
 				</div>
+
+
+
+				<div class="box alt">
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="images/pg_2/cap_gif1.gif"
+									alt="Description" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/pg_2/cap_gif2.gif"
+									alt="Description" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/pg_2/cap_gif3.gif"
+									alt="Description" /></span></div>
+					</div>
+				</div>
+
+
+
+
+
+				
+
+				<hr>
+
+
+				<div style="text-align: center;">
+					<img src="images/pg_2/lucki.gif" alt="Description" width="500">
+				</div>
+
+
+				<hr />
+
+
 
 
 				<!-- Box -->
@@ -211,7 +263,7 @@
 			<section class="alt">
 				<h3>Address</h3>
 				<p><a href="https://www.google.com/maps/place/Pickering,+ON/@43.9482713,-79.0184346,11z/data=!3m1!4b1!
-						4m5!3m4!1s0x89d51d21ccd37533:0xdd8ceff2f844fcbf!8m2!3d43.8970929!4d-78.8657912">Pickering, Ontario</a></p>
+							4m5!3m4!1s0x89d51d21ccd37533:0xdd8ceff2f844fcbf!8m2!3d43.8970929!4d-78.8657912">Pickering, Ontario</a></p>
 				</p>
 			</section>
 
@@ -234,6 +286,7 @@
 		<!-- Copyright -->
 		<div id="copyright">
 			<ul>
+				<li>&copy; </li>
 				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
 			</ul>
 		</div>
